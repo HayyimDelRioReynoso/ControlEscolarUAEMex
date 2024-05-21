@@ -1,0 +1,204 @@
+body {
+    background-color: #2E4334;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+}
+
+.imgPotro {
+    left: 0;
+    top: 0;
+}
+
+.formLogin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 28%;
+}
+
+.logoUAEMex {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7vw;
+    height: auto;
+}
+
+.tituloForm {
+    margin-top: 60vh;
+    font-size: 4.5vh;
+    color: #A6A6A6;
+    margin-bottom: 7vh;
+}
+
+.tituloForm .uaemex {
+    color: white;
+}
+
+.inputLogin {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 300px;
+    margin-top: 2vh;
+}
+
+.input {
+    width: 100%;
+    height: 5.5vh;
+    line-height: 30px;
+    padding: 0 1rem;
+    padding-left: 4.5rem;
+    border: 3px solid white;
+    border-radius: 10px;
+    outline: none;
+    background-color: #9BA389;
+    color: #0d0c22;
+    transition: .5s ease;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+}
+
+.input::placeholder {
+    color: white;
+    font-size: 3vh;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: #9BA389;
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+    color: black;
+    padding-left: 3rem;
+}
+
+.input:focus::placeholder,
+input:hover::placeholder {
+    color: darkgray;
+}
+
+.icon {
+    position: absolute;
+    left: 1.5rem;
+    fill: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.botonInicio {
+    height: 7vh;
+    background-color: #15241A;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3vh;
+    margin-top: 6vh;
+    transition: ease-out 0.9s;
+}
+
+.botonInicio:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #654228;
+
+}
+
+.botonInicio:active {
+    transform: scale(0.9);
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100vw;
+    }
+
+    #imgPotro {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        margin-top: 47vh;
+    }
+
+
+
+
+    .formLogin {
+        position: relative;
+        margin-top: 14vh;
+        transform: translate(0, 0);
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+    }
+
+
+    .logoUAEMex {
+        width: 20vw;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: -10vh;
+    }
+
+    .tituloForm {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 4vh;
+    }
+
+    .inputLogin {
+        max-width: 80%;
+        margin: 1vh auto;
+    }
+
+    .input {
+        width: 100%;
+        font-size: 2.5vh;
+        border-radius: 10px;
+    }
+
+    .botonInicio {
+        width: 60%;
+        height: 6vh;
+        font-size: 2.5vh;
+        margin-top: 4vh;
+        align-self: center;
+        border-radius: 10px;
+    }
+}
